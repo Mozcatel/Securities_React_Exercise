@@ -19,7 +19,6 @@ const theme = createMuiTheme({
 
 class App extends Component {
 
-
   render() {
     return (
       <ThemeProvider theme={theme}>
@@ -39,7 +38,8 @@ class App extends Component {
 
             data={query =>
               new Promise((resolve: any, reject: any) => {
-                fetch('http://localhost:8000/securities')
+                fetch(process.env.REACT_APP_FE_PROVIDER_URL 
+                  || 'http://localhost:8000/securities')
                   .then(async response => {
                     let data = await response.json();
                     data = data.map(MapTrend);

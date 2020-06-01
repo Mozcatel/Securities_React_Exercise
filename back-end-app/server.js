@@ -9,6 +9,7 @@ var dotenv_1 = __importDefault(require("dotenv"));
 var minimist_1 = __importDefault(require("minimist"));
 var argv = minimist_1.default(process.argv.slice(2));
 dotenv_1.default.config({ path: __dirname + ("/.env." + (process.env.NODE_ENV || 'development')) });
+console.log(process.env.DB_DATABASE_CONNSTRING);
 var dbClient = new mongodbclient_1.default({
     connectionString: process.env.DB_DATABASE_CONNSTRING || '',
     database: process.env.DB_DATABASE_NAME || '',
