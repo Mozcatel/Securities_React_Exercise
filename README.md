@@ -2,6 +2,7 @@
   The exercise is divided by two standalone components, to garantee higher testability of each individual aspect:
 
   **back-end-app**: Contains all back-end and database logic;
+  
   **front-end-app**: Contains front-end single page application;
 
 ## Requirements
