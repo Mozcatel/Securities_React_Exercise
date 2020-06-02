@@ -55,7 +55,7 @@ class App extends Component {
               })
             }
 
-
+            // adding all columns
             columns={[
               {
                 title: "securityName", field: "securityName", cellStyle: {
@@ -89,6 +89,7 @@ class App extends Component {
   }
 }
 
+// function that will return a new object with additional rules for trend column rendering
 function MapTrend(val: any) {
   const newVal = Object.assign(val);
   const percentage = val.trend * 100
