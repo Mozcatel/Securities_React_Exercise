@@ -22,7 +22,7 @@
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "minimist": "^1.2.5",
-    "mocha": "^7.1.2",
+    "mocha": "^10.2.0",
     "mongodb": "^3.5.8"
   },
   "devDependencies": {
